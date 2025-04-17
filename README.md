@@ -1,43 +1,44 @@
-1) Overview
+# **Yoga Booking Mobile App**
 
-  The application is a hybrid yoga booking platform built using both Android native and React Native. It provides functionalities for users to browse yoga classes, manage their cart, and place bookings. The app includes several features to enhance user experience, including real-time syncing, efficient data storage, and interactive UI components.
+## **Overview**
 
-2) Key Features
+The Yoga Booking app is a **hybrid mobile application** developed using **Android (Java)** and **React Native (TypeScript)**. It offers users a seamless experience to browse yoga classes, manage their cart, and place bookings. The app includes **real-time synchronization**, efficient **data storage**, and a highly interactive **UI** for a smooth user experience.
 
-  Course and Class Management:\
-  
-    Users can view courses, filter them by date and name, and explore detailed information for each class.
-    Each class instance is validated for the correct date, ensuring a smooth booking process.
-    Users can add new courses and update existing ones, with validation checks in place for required fields.
+## **Key Features**
 
-  Cart and Booking:
+### **Course and Class Management**
+- Users can **view** and **filter** courses by date and name.
+- **Class instances** are validated to ensure correct scheduling and smooth booking.
+- Users can **add** and **update** courses with validation checks for required fields.
 
-    Users can add classes to their cart and place orders by entering their email.
-    The cart is managed dynamically in Firebase, ensuring synchronization between the app and the cloud.
+### **Cart and Booking**
+- Users can **add** classes to their cart and **place orders** using their email.
+- **Cart synchronization** is handled dynamically with Firebase, ensuring smooth data flow between the app and the cloud.
 
-  Real-Time Synchronization:
+### **Real-Time Synchronization**
+- The app uses **WorkManager** to **sync data** periodically from local devices to the cloud.
+- Synchronization tracks **add, update, and delete operations**, ensuring data consistency across platforms.
 
-    The app uses WorkManager to periodically sync data from the local device to the cloud, ensuring up-to-date information across all platforms.
-    Data synchronization includes add, update, and delete operations tracked by status.
+### **Responsive UI**
+- The UI is **responsive** across various screen sizes, featuring **horizontal scrolling** and **animated carousels** (using Glide).
+- **Tab-based navigation** enhances usability, allowing users to switch between **Home**, **Cart**, and **Profile** screens easily.
 
-  Responsive UI:
-  
-    The UI is designed to be responsive across different screen sizes, utilizing horizontal scrolling, animated carousels (using Glide), and dynamic filtering options for enhanced usability.
-    The app features tab navigation to easily switch between Home, Cart, and Profile screens.
+### **User Interaction**
+- **Error handling** is integrated with clear messages for missing or incorrect input.
+- **Dialogs** and **toast messages** provide feedback on operations like adding, updating, or deleting courses.
 
-  User Interaction:
+## **Tech Stack**
 
-    Error handling is integrated throughout, displaying clear messages for required fields and successful or failed operations.
-    Dialogs and toast messages guide users through adding and updating classes or courses.
+- **Android:** Java, **SQLite**, **WorkManager**, **Glide**.
+- **React Native:** TypeScript, **Firebase**, **Firestore**.
+- **Backend:** Firebase for cloud storage and syncing.
 
-3) Tech Stack
+## **Security**
+- Basic **input validation** ensures the integrity of user data.
+- **Data synchronization** between local storage and Firebase uses **secure protocols**.
+- **Encryption** is considered for sensitive data at rest.
 
-  Android: Built using Java, SQLite for local data storage, WorkManager for background tasks, and Glide for image loading.
-
-  React Native: Uses TypeScript, Firebase for backend, and Firestore for storing and retrieving data.
-
-4) Security
-   
-  Basic security measures are implemented such as input validation to prevent crashes and errors.
-
-Data is synchronized securely with Firebase using Firestore, and encryption is considered for sensitive data storage.
+## **Architecture**
+- The app follows a **modular MVVM architecture**, making it scalable and maintainable.
+- **Room Database** is used for local storage, while **Firestore** handles cloud synchronization.
+- Background synchronization tasks are managed by **WorkManager**, ensuring data consistency.

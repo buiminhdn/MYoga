@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/course_item_background"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNameCourse"
+        android:text="Title"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/dark_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDescriptionCourse"
+        android:text="Desciption"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Course Info (Day, Time, Duration) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Day -->
+        <TextView
+            android:textColor="@color/dark_text"
+            android:id="@+id/tvDateOfWeekCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:background="@drawable/tag_rounded_background"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/tvTimeCourse"
+            android:textColor="@color/dark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:30"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/tag_rounded_background"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/tvDurationCourse"
+            android:textColor="@color/dark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 minutes"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:background="@drawable/tag_rounded_background"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

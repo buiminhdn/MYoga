@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailCourseActivity">
+
+    <!-- Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/btnBackDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_icon_background"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp">
+
+            <!-- Back Button -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back button" />
+
+        </RelativeLayout>
+
+
+        <!-- Title: Home -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="250dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:text="Detail"
+            android:maxLines="1"
+            android:textColor="@color/dark_text"
+            android:textSize="24sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/btnDeleteDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_icon_background"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Back button" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDescriptionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available."
+        android:textColor="@color/dark_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Course Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_text"
+            android:id="@+id/tvDayOfWeekDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day of Week: Monday"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_text"
+            android:id="@+id/tvTimeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 11:30"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDurationDetail"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: 60 minutes"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTypeDetail"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: Flow yoga"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCapacityDetail"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_text"
+            android:layout_height="wrap_content"
+            android:text="Capacity: 60 people"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPriceDetail"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_text"
+            android:text="Price: 200.000d"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdateDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="UPDATE"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_marginVertical="20dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List Classes"
+            android:textColor="@color/dark_text"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/btnAddClassDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_background"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Search icon"
+                android:src="@drawable/ic_plus" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvClassesDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

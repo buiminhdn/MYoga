@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddCourseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="35dp"
+            android:paddingBottom="25dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/header_upsert_background">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Page Title -->
+                <TextView
+                    android:id="@+id/tvHeaderCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Create a new course"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!-- Subtitle -->
+                <TextView
+                    android:id="@+id/tvSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="5dp"
+                    android:text="In publishing and graphic design, lorem ipsum is a placeholder text..."
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/dark_text"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etTitleCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Enter name"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Description"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etDescriptionCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Enter description"
+                    android:padding="12dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/dark_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etPriceCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Enter price"
+                    android:padding="12dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black" />
+
+                <!-- Day and Time Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Day of Week Input -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day of week"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_text"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:minHeight="48dp"
+                            android:id="@+id/spinnerDayOfWeekCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:padding="12dp"
+                            android:entries="@array/date_of_week"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <!-- Time -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_text"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/etTimeCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@drawable/edittext_background"
+                            android:hint="Select time"
+                            android:padding="12dp"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Day and Time Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Day of Week Input -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Duration"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_text"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/etDurationCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@drawable/edittext_background"
+                            android:hint="Enter duration"
+                            android:padding="12dp"
+                            android:inputType="number"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- Time -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Capacity"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_text"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/etCapacityCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@drawable/edittext_background"
+                            android:hint="Enter price"
+                            android:padding="12dp"
+                            android:inputType="number"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Class Type -->
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of class"
+                    android:textStyle="bold"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/dark_text"
+                    android:textSize="16sp" />
+
+                <!-- RadioGroup for Class Type -->
+                <RadioGroup
+                    android:id="@+id/rgClassTypeCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rbFlowYoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flow Yoga"
+                        android:layout_marginEnd="12dp"
+                        android:buttonTint="@color/radio_button_color"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/rbAerialYoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:buttonTint="@color/radio_button_color"
+                        android:text="Aerial Yoga" />
+
+                    <RadioButton
+                        android:id="@+id/rbFamilyYoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/radio_button_color"
+                        android:text="Family Yoga" />
+
+                </RadioGroup>
+
+                <Button
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/btnSaveCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="ADD COURSE"
+                    android:background="@drawable/rounded_button_background"
+                    android:textColor="#FFFFFF"
+                    android:padding="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

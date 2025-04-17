@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/bottom_nav_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CustomTimePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Main background color for DatePicker dialog -->
+        <item name="android:background">@color/dark_blue</item>
+
+        <!-- Text color for the calendar days, headers, and selected date -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#B0B0B0</item>
+
+        <!-- Color for the DatePicker header and selection -->
+        <item name="colorAccent">@color/white</item>
+        <item name="android:headerBackground">@color/dark_blue</item>
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+</resources>

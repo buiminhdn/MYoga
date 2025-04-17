@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/coursesTab"
+        android:icon="@drawable/ic_home"
+        android:title="Courses"/>
+
+    <item
+        android:id="@+id/classesTab"
+        android:icon="@drawable/ic_star"
+        android:title="Classes" />
+
+    <item
+        android:id="@+id/addCourseTab"
+        android:icon="@drawable/ic_plus"
+        android:title="Add" />
+</menu>

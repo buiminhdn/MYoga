@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/course_item_background"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Class Info Section (Teacher and Date) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Teacher Name -->
+        <TextView
+            android:id="@+id/tvTeacherClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Teacher: Jane Doe"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Class Date -->
+        <TextView
+            android:id="@+id/tvDateClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Date: 17th October 2023" />
+
+        <TextView
+            android:id="@+id/tvCommentClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Date: 17th October 2023Date: 17th October 2023Date: 17th October 2023Date: 17th October 2023Date: 17th October 2023Date: 17th October 2023" />
+
+
+    </LinearLayout>
+
+    <!-- Edit Button -->
+    <ImageView
+        android:id="@+id/ivDeleteClass"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Delete class button" />
+
+    <!-- Delete Button -->
+    <ImageView
+        android:id="@+id/ivEditClass"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_toStartOf="@id/ivDeleteClass"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="Edit class button" />
+
+</RelativeLayout>

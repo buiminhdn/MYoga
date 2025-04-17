@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:layout_marginTop="40dp"
+    tools:context=".fragments.CoursesFragment">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SYNC"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/numOfCourses"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88 Courses Available"
+            android:textColor="@color/dark_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/rvCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</FrameLayout>

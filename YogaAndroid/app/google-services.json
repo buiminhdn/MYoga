@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303012731454",
+    "project_id": "bmyoga-e90c0",
+    "storage_bucket": "bmyoga-e90c0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303012731454:android:4d1742ad9ec008c9604f6f",
+        "android_client_info": {
+          "package_name": "com.example.yogaandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ZiyMncTr3sX7SNtl5KU7m3WFQv24VAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
